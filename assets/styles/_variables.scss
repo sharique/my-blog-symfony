@@ -1,0 +1,13 @@
+:root {
+    --ivory: #F0EAD2;
+    --sage: #DDE5B4;
+    --earthy-green: #ADC178;
+    --warm-brown: #A98467;
+    --olive-green: #6C584C;
+}
+
+// Define variables for breakpoints and content width.
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$content-width: 800px;
