@@ -15,7 +15,9 @@ class BlogType extends AbstractType
     {
         $builder
             ->add('title')
-            ->add('body')
+            ->add('body', null, [
+                'attr' => ['class' => 'markdown-editor'],
+            ])
             ->add('Tags', EntityType::class, [
                 'class' => Tags::class,
                 'choice_label' => 'id',

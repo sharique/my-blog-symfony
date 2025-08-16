@@ -8,3 +8,10 @@ import './bootstrap.js';
 
 
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+
+document.addEventListener('DOMContentLoaded', function () {
+    var textarea = document.querySelector('.markdown-editor');
+    if (textarea) {
+        new EasyMDE({ element: textarea });
+    }
+});
