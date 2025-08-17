@@ -18,12 +18,14 @@ class BlogType extends AbstractType
             ->add('body', null, [
                 'attr' => ['class' => 'markdown-editor'],
             ])
-            ->add('Tags', EntityType::class, [
+            ->add('Tags', EntityType::class,[
                 'class' => Tags::class,
-                'choice_label' => 'id',
+                'choice_label' => 'name',
+                'placeholder' => 'Choose Tags',
                 'multiple' => true,
-            ])
-        ;
+                'expanded' => false,
+                'autocomplete' => true,
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver): void
